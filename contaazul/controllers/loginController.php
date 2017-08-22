@@ -19,7 +19,7 @@ class loginController extends Controller
 			}
 			else
 			{
-				$data['error'] = 'E-mail ou senha errados!';
+				$data['error'] = 'E-mail ou senha incorreto!';
 			}
 		}
 
