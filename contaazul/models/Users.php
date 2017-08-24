@@ -51,6 +51,11 @@ class Users extends Model
 		}
 	}
 
+	public function logout()
+	{
+		unset($_SESSION['ccUser']);
+	}
+
 	public function getCompany()
 	{
 		if(isset($this->userInfo['id_company']))
@@ -60,6 +65,18 @@ class Users extends Model
 		else
 		{
 			return 0;
+		}
+	}
+
+	public function getName() 
+	{
+		if(isset($this->userInfo['name']))
+		{
+			return $this->userInfo['name'];
+		}
+		else
+		{
+			return '';
 		}
 	}
 }

@@ -34,7 +34,7 @@
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> 
                                 <span class="block m-t-xs"> 
-                                    <strong class="font-bold"><?php echo $viewData['company_name']  ?> </strong> 
+                                    <strong class="font-bold"><?php echo $viewData['user_name']  ?> </strong> 
                                     <b class="caret"></b>
                                 </span>
                             </span> 
@@ -44,7 +44,7 @@
                             <li><a href="contacts.html">Contacts</a></li>
                             <li><a href="mailbox.html">Mailbox</a></li>
                             <li class="divider"></li>
-                            <li><a href="<?php echo BASE_URL ?>login/logout">Sair</a></li>
+                            <li><a href="<?php echo BASE_URL; ?>logout">Sair</a></li>
                         </ul>
                     </div>
                     <div class="logo-element">
@@ -52,10 +52,10 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="<?php echo BASE_URL; ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Meus Cursos</span>
+                    <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary pull-right">NEW</span></a>
+                    <a href="<?php echo BASE_URL; ?>permissions"><i class="fa fa-diamond"></i> <span class="nav-label">Perrmissões</span></a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
@@ -310,7 +310,7 @@
 
 
                 <li>
-                    <a href="<?php echo BASE_URL ?>login/logout">
+                    <a href="<?php echo BASE_URL; ?>logout">
                         <i class="fa fa-sign-out"></i> Sair
                     </a>
                 </li>
